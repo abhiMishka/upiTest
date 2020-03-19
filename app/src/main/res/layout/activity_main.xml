@@ -4,9 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.malav.test.MainActivity"
     android:orientation="vertical">
 
+
+    <EditText
+        android:id="@+id/upiEt"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter UPI id">
+
+    </EditText>
     <Button
         android:id="@+id/submit"
         android:layout_width="match_parent"
@@ -14,9 +22,14 @@
         android:text="Click here to pay ₹1"/>
 
     <TextView
-        android:id="@+id/link"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:id="@+id/infoTv"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Test from your mobile to pay ₹1 to Aayushi Shah using your BHIM/BankUPI app. Try now!" />
+        android:text="Response">
+
+    </TextView>
 
 </LinearLayout>
