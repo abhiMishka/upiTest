@@ -24,5 +24,14 @@ Basic app to test upi payment and the response the payment apps return back.
 6.TruCaller
 <br href="url"><img src="https://github.com/abhiMishka/upiTest/blob/master/response/trucaller.png" align="centre" height="540"></br>
 
+Note : for the app to result correct data from PhonePe app use following uri method
+Uri uri = Uri.parse("upi://pay").buildUpon()
+                .appendQueryParameter("pa", payeeAddress)
+                .appendQueryParameter("pn", payeeName)
+                .appendQueryParameter("tn", transactionNote)
+                .appendQueryParameter("am", amount)
+                .appendQueryParameter("cu", "INR")
+                .appendQueryParameter("tr", "261433")
+                .build();
 
 original repo : https://github.com/ShahMalavS/UPI-DeepLinked
